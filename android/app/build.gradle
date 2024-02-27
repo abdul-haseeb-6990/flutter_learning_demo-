@@ -65,3 +65,23 @@ flutter {
 }
 
 dependencies {}
+
+flavorDimensions "default"
+
+productFlavors {
+    dev {
+        dimension "default"
+        resValue "string", "app_name", "Flutter Demo"
+        applicationIdSuffix ".dev"
+    }
+    stage {
+        dimension "default"
+        resValue "string", "app_name", "Flutter Demo"
+        applicationIdSuffix ".stage"
+    }
+    prod {
+        dimension "default"
+        resValue "string", "app_name", "Flutter Demo"
+        applicationIdSuffix ""
+    }
+}
